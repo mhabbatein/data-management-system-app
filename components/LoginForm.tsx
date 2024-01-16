@@ -4,6 +4,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 
+import { FaGoogle } from "react-icons/fa";
+
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -15,13 +17,18 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import Link from "next/link";
+import { TfiEmail } from "react-icons/tfi";
 
 const formSchema = z.object({
-  username: z.string().min(2, {
-    message: "Username minimal 2 karakter",
-  }),
-  password: z.string().min(4, {
-    message: "password minimal 4 karakter",
+  email: z
+    .string()
+    .min(1, {
+      message: "Email wajib diisi",
+    })
+    .email({ message: "email tidak valid" }),
+  password: z.string().min(1, {
+    message: "password wajib diisi",
   }),
 });
 
@@ -30,7 +37,7 @@ export function LoginForm() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      username: "",
+      email: "",
       password: "",
     },
   });
@@ -42,46 +49,61 @@ export function LoginForm() {
   }
 
   return (
-    <Form {...form}>
-      <form
-        onSubmit={form.handleSubmit(onSubmit)}
-        className="flex flex-col gap-y-3"
-      >
-        <FormField
-          control={form.control}
-          name="username"
-          render={({ field }) => (
-            <FormItem className="gap-y-1.5">
-              <FormLabel>Username</FormLabel>
-              <FormControl>
-                <Input placeholder="Masukkan username anda" {...field} />
-              </FormControl>
-              {/* <FormDescription>
+    <section className="flex flex-col items-center gap-6 rounded-lg border border-input p-4">
+      <h1 className="text-2xl font-semibold">Login</h1>
+      <Form {...form}>
+        <form
+          onSubmit={form.handleSubmit(onSubmit)}
+          className="flex flex-col gap-y-3"
+        >
+          <FormField
+            control={form.control}
+            name="email"
+            render={({ field }) => (
+              // width is here
+              <FormItem className="w-96 gap-y-1.5">
+                <FormLabel>Email</FormLabel>
+                <FormControl>
+                  <Input placeholder="Masukkan Email anda" {...field} />
+                </FormControl>
+                {/* <FormDescription>
                 This is your public display name.
               </FormDescription> */}
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <FormField
-          control={form.control}
-          name="password"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Password</FormLabel>
-              <FormControl>
-                <Input
-                  placeholder="Masukkan password anda"
-                  {...field}
-                  type="password"
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <Button type="submit">Submit</Button>
-      </form>
-    </Form>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="password"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Password</FormLabel>
+                <FormControl>
+                  <Input
+                    placeholder="Masukkan password anda"
+                    {...field}
+                    type="password"
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <p className="self-center text-sm">
+            Lupa password?{" "}
+            <Link href="#" className="underline">
+              Hubungi Untung
+            </Link>
+          </p>
+          <Button type="submit">Submit</Button>
+          <p className="self-center text-sm">Atau</p>
+          <Button className="flex w-full items-center gap-x-2">
+            <FaGoogle />
+            <>Login melalui Google</>
+          </Button>
+        </form>
+      </Form>
+    </section>
   );
 }
