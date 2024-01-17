@@ -45,11 +45,11 @@ export function LoginForm() {
   function onSubmit(values: z.infer<typeof formSchema>) {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
-    console.log(values);
+    // console.log(values);
   }
 
   return (
-    <section className="flex flex-col items-center gap-6 rounded-lg border border-input p-4">
+    <section className="z-10 flex flex-col items-center gap-6 rounded-lg border border-input bg-card p-4">
       <h1 className="text-2xl font-semibold">Login</h1>
       <Form {...form}>
         <form
@@ -61,7 +61,7 @@ export function LoginForm() {
             name="email"
             render={({ field }) => (
               // width is here
-              <FormItem className="w-96 gap-y-1.5">
+              <FormItem className="w-72 gap-y-1.5 lg:w-96">
                 <FormLabel>Email</FormLabel>
                 <FormControl>
                   <Input placeholder="Masukkan Email anda" {...field} />
