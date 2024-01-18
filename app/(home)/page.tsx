@@ -10,13 +10,12 @@ export default function HomePage() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center">
-      Data Management System Barzadata (habib)
+    <main className="flex min-h-[calc(100vh-72px)] flex-col items-center justify-center md:min-h-screen">
+      <h2 className="text-3xl font-semibold">Dashboard Utama</h2>
+      <p>Data Management System Barzadata (habib)</p>
       <p>Examples:</p>
       <div className="flex flex-row gap-4 underline ">
         <Link href="/login">Login</Link>
-        <Link href="/signup">Signup</Link>
-        <Link href="/onboarding">Onboarding</Link>
       </div>
     </main>
   );
