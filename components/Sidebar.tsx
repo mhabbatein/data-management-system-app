@@ -23,12 +23,14 @@ export function Sidebar() {
       </SheetTrigger>
       <SheetContent side={"left"}>
         <div className="flex flex-row items-center justify-between">
-          <Link
-            href="/"
-            className="bg-gradient-to-br from-black to-gray-500 bg-clip-text text-2xl font-bold text-transparent dark:from-gray-400 dark:to-gray-700"
-          >
-            Barzadata
-          </Link>
+          <SheetClose asChild>
+            <Link
+              href="/"
+              className="bg-gradient-to-br from-black to-gray-500 bg-clip-text text-2xl font-bold text-transparent dark:from-gray-400 dark:to-gray-700"
+            >
+              Barzadata
+            </Link>
+          </SheetClose>
           <SheetClose asChild>
             <Button variant="outline" size="icon">
               <X />
