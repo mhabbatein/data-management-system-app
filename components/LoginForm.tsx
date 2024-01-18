@@ -49,7 +49,7 @@ export function LoginForm() {
   }
 
   return (
-    <section className="z-10 flex flex-col items-center gap-6 rounded-lg border border-input bg-card p-4">
+    <section className="z-0 flex flex-col items-center gap-6 rounded-lg border border-input bg-card p-4">
       <h1 className="text-2xl font-semibold">Login</h1>
       <Form {...form}>
         <form
