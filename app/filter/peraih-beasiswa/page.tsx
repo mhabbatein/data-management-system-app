@@ -5,7 +5,7 @@ import Image from "next/image";
 import { z } from "zod";
 
 import { columns } from "@/components/data-table/columns";
-import { DataTable } from "@/components/data-table/data-table";
+import { DataTable } from "@/components/Table";
 import { UserNav } from "@/components/data-table/user-nav";
 import { taskSchema } from "@/data/schema";
 
@@ -28,23 +28,7 @@ export default async function PeraihBeasiswaPage() {
 
   return (
     <>
-      <div className="md:hidden">
-        <Image
-          src="/examples/tasks-light.png"
-          width={1280}
-          height={998}
-          alt="Playground"
-          className="block dark:hidden"
-        />
-        <Image
-          src="/examples/tasks-dark.png"
-          width={1280}
-          height={998}
-          alt="Playground"
-          className="hidden dark:block"
-        />
-      </div>
-      <div className="hidden h-full flex-1 flex-col space-y-8 p-8 md:flex">
+      <div className=" flex h-full flex-1 flex-col space-y-8 p-8">
         <div className="flex items-center justify-between space-y-2">
           <div>
             <h2 className="text-2xl font-bold tracking-tight">Welcome back!</h2>
