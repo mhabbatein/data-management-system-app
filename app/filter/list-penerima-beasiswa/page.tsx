@@ -7,7 +7,7 @@ import { z } from "zod";
 import { columns } from "@/components/data-table/columns";
 import { DataTable } from "@/components/Table";
 import { UserNav } from "@/components/data-table/user-nav";
-import { taskSchema } from "@/data/schema";
+import { studentSchema } from "@/data/schema";
 
 export const metadata: Metadata = {
   title: "Tasks",
@@ -20,7 +20,7 @@ async function getTasks() {
 
   const tasks = JSON.parse(data.toString());
 
-  return z.array(taskSchema).parse(tasks);
+  return z.array(studentSchema).parse(tasks);
 }
 
 export default async function ListPenerimaBeasiswaPage() {

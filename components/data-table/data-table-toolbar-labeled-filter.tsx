@@ -14,7 +14,7 @@ interface DataTableToolbarProps<TData> {
   table: Table<TData>;
 }
 
-export function DataTableToolbar<TData>({
+export function DataTableToolbarLabeledFilter<TData>({
   table,
 }: DataTableToolbarProps<TData>) {
   const isFiltered = table.getState().columnFilters.length > 0;
@@ -30,17 +30,17 @@ export function DataTableToolbar<TData>({
           }
           className="h-8 w-[150px] lg:w-[250px]"
         />
-        {/* {table.getColumn("status") && (
+        {table.getColumn("universitas") && (
           <DataTableFacetedFilter
-            column={table.getColumn("status")}
-            title="Status"
+            column={table.getColumn("universitas")}
+            title="Universitas"
             options={statuses}
           />
         )}
-        {table.getColumn("priority") && (
+        {table.getColumn("jurusan") && (
           <DataTableFacetedFilter
-            column={table.getColumn("priority")}
-            title="Priority"
+            column={table.getColumn("jurusan")}
+            title="Jurusan"
             options={priorities}
           />
         )}
@@ -53,7 +53,7 @@ export function DataTableToolbar<TData>({
             Reset
             <Cross2Icon className="ml-2 h-4 w-4" />
           </Button>
-        )} */}
+        )}
       </div>
       <DataTableViewOptions table={table} />
     </div>

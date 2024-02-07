@@ -1,0 +1,172 @@
+[
+  {
+    "id": "1",
+    "nama": "John Doe",
+    "universitas": "Universitas A",
+    "jenjang": "S1",
+    "jurusan": "Teknik Informatika",
+    "kota": "Jakarta",
+    "jalurPenerimaan": "SBMPTN",
+    "tahunMasuk": "2020-09-01"
+  },
+  {
+    "id": "2",
+    "nama": "Jane Smith",
+    "universitas": "Universitas B",
+    "jenjang": "S1",
+    "jurusan": "Manajemen",
+    "kota": "Bandung",
+    "jalurPenerimaan": "SNMPTN",
+    "tahunMasuk": "2019-08-15"
+  },
+  {
+    "id": "3",
+    "nama": "Michael Johnson",
+    "universitas": "Universitas C",
+    "jenjang": "S2",
+    "jurusan": "Ekonomi",
+    "kota": "Surabaya",
+    "jalurPenerimaan": "Mandiri",
+    "tahunMasuk": "2021-07-20"
+  },
+  {
+    "id": "4",
+    "nama": "Maria Garcia",
+    "universitas": "Universitas A",
+    "jenjang": "S1",
+    "jurusan": "Ilmu Komunikasi",
+    "kota": "Yogyakarta",
+    "jalurPenerimaan": "SBMPTN",
+    "tahunMasuk": "2018-09-03"
+  },
+  {
+    "id": "5",
+    "nama": "Ahmad Abdullah",
+    "universitas": "Universitas B",
+    "jenjang": "S1",
+    "jurusan": "Hukum",
+    "kota": "Surabaya",
+    "jalurPenerimaan": "SNMPTN",
+    "tahunMasuk": "2020-08-10"
+  },
+  {
+    "id": "6",
+    "nama": "Linda Chen",
+    "universitas": "Universitas C",
+    "jenjang": "S1",
+    "jurusan": "Kedokteran",
+    "kota": "Semarang",
+    "jalurPenerimaan": "Mandiri",
+    "tahunMasuk": "2019-07-25"
+  },
+  {
+    "id": "7",
+    "nama": "David Lee",
+    "universitas": "Universitas A",
+    "jenjang": "S2",
+    "jurusan": "Pendidikan",
+    "kota": "Jakarta",
+    "jalurPenerimaan": "SBMPTN",
+    "tahunMasuk": "2021-08-30"
+  },
+  {
+    "id": "8",
+    "nama": "Siti Nur",
+    "universitas": "Universitas B",
+    "jenjang": "S1",
+    "jurusan": "Akuntansi",
+    "kota": "Bandung",
+    "jalurPenerimaan": "SNMPTN",
+    "tahunMasuk": "2017-09-02"
+  },
+  {
+    "id": "9",
+    "nama": "Muhammad Ali",
+    "universitas": "Universitas C",
+    "jenjang": "S1",
+    "jurusan": "Teknik Sipil",
+    "kota": "Surabaya",
+    "jalurPenerimaan": "Mandiri",
+    "tahunMasuk": "2019-08-28"
+  },
+  {
+    "id": "10",
+    "nama": "Sarah Wang",
+    "universitas": "Universitas A",
+    "jenjang": "S1",
+    "jurusan": "Sastra Inggris",
+    "kota": "Yogyakarta",
+    "jalurPenerimaan": "SBMPTN",
+    "tahunMasuk": "2020-07-15"
+  },
+  {
+    "id": "11",
+    "nama": "Andi Susilo",
+    "universitas": "Universitas B",
+    "jenjang": "S2",
+    "jurusan": "Pendidikan",
+    "kota": "Bandung",
+    "jalurPenerimaan": "SNMPTN",
+    "tahunMasuk": "2021-09-20"
+  },
+  {
+    "id": "12",
+    "nama": "Rini Dewi",
+    "universitas": "Universitas C",
+    "jenjang": "S1",
+    "jurusan": "Psikologi",
+    "kota": "Semarang",
+    "jalurPenerimaan": "Mandiri",
+    "tahunMasuk": "2018-08-12"
+  },
+  {
+    "id": "13",
+    "nama": "Budi Santoso",
+    "universitas": "Universitas A",
+    "jenjang": "S1",
+    "jurusan": "Teknik Elektro",
+    "kota": "Jakarta",
+    "jalurPenerimaan": "SBMPTN",
+    "tahunMasuk": "2019-07-05"
+  },
+  {
+    "id": "14",
+    "nama": "Cindy Wong",
+    "universitas": "Universitas B",
+    "jenjang": "S1",
+    "jurusan": "Desain Grafis",
+    "kota": "Bandung",
+    "jalurPenerimaan": "SNMPTN",
+    "tahunMasuk": "2018-08-25"
+  },
+  {
+    "id": "15",
+    "nama": "Agus Kurniawan",
+    "universitas": "Universitas C",
+    "jenjang": "S2",
+    "jurusan": "Manajemen",
+    "kota": "Surabaya",
+    "jalurPenerimaan": "Mandiri",
+    "tahunMasuk": "2021-09-10"
+  },
+  {
+    "id": "16",
+    "nama": "Rita Sari",
+    "universitas": "Universitas A",
+    "jenjang": "S1",
+    "jurusan": "Ilmu Politik",
+    "kota": "Yogyakarta",
+    "jalurPenerimaan": "SBMPTN",
+    "tahunMasuk": "2020-08-05"
+  },
+  {
+    "id": "17",
+    "nama": "Hadi Prasetyo",
+    "universitas": "Universitas B",
+    "jenjang": "S1",
+    "jurusan": "Arsitektur",
+    "kota": "Bandung",
+    "jalurPenerimaan": "SNMPTN",
+    "tahunMasuk": "2017-09-12"
+  }
+]
