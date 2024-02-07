@@ -13,6 +13,41 @@ import {
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 
+const links: { title: string; href: string }[] = [
+  {
+    title: "Beranda",
+    href: "/",
+  },
+  {
+    title: "Grafik",
+    href: "/filter/grafik",
+  },
+  {
+    title: "List Penerima Beasiswa",
+    href: "/filter/list-penerima-beasiswa",
+  },
+  {
+    title: "Sebaran Kampus",
+    href: "/filter/sebaran-kampus",
+  },
+  {
+    title: "Sebaran Jurusan",
+    href: "/filter/sebaran-jurusan",
+  },
+  {
+    title: "Sebaran Pekerjaan",
+    href: "/filter/sebaran-pekerjaan",
+  },
+  {
+    title: "Kawan Barzada",
+    href: "/filter/kawan-barzada",
+  },
+  {
+    title: "Komunitas",
+    href: "/filter/komunitas",
+  },
+];
+
 export function Sidebar() {
   return (
     <Sheet>
@@ -38,18 +73,11 @@ export function Sidebar() {
           </SheetClose>
         </div>
         <div className="mt-4 flex flex-col gap-y-4">
-          <SheetClose asChild>
-            <Link href="/filter/universitas">Universitas</Link>
-          </SheetClose>
-          <SheetClose asChild>
-            <Link href="/filter/hobi">Hobi</Link>
-          </SheetClose>
-          <SheetClose asChild>
-            <Link href="/filter/jurusan">Jurusan</Link>
-          </SheetClose>
-          <SheetClose asChild>
-            <Link href="/filter/peraih-beasiswa">Peraih Beasiswa</Link>
-          </SheetClose>
+          {links.map((link) => (
+            <SheetClose asChild>
+              <Link href={link.href}>{link.title}</Link>
+            </SheetClose>
+          ))}
         </div>
       </SheetContent>
     </Sheet>

@@ -16,28 +16,47 @@ import {
 
 const components: { title: string; href: string; description: string }[] = [
   {
-    title: "Universitas",
-    href: "/filter/universitas",
-    description:
-      "Mencari teman-teman seangkatan yang kuliah di tempat yang sama atau di lokasi terdekat",
+    title: "Beranda",
+    href: "/",
+    description: "Halaman Beranda website Manajemen dan Grafis Data Barzada31",
   },
   {
-    title: "Jurusan",
-    href: "/filter/jurusan",
-    description:
-      "Mencari teman-teman seangkatan yang menempuh jurusan yang sama",
+    title: "Grafik",
+    href: "/filter/grafik",
+    description: "Grafis persebaran teman-teman Barzada31 di seluruh dunia",
   },
   {
-    title: "Hobi",
-    href: "/filter/hobi",
+    title: "List Penerima Beasiswa",
+    href: "/filter/list-penerima-beasiswa",
     description:
-      "Mencari teman-teman seangkatan yang memilik hobi/passion yang sama",
+      "List penerima beasiswa dari teman-teman Barzada31 di seluruh dunia",
   },
   {
-    title: "Peraih Beasiswa",
-    href: "/filter/peraih-beasiswa",
+    title: "Sebaran Kampus",
+    href: "/filter/sebaran-kampus",
+    description: "List Sebaran Kampus studi lanjut teman-teman Barzada31",
+  },
+  {
+    title: "Sebaran Jurusan",
+    href: "/filter/sebaran-jurusan",
     description:
-      "Mencari teman-teman seangkatan yang mendapatkan beasiswa di kampus/institusi tertentu",
+      "List Sebaran Jurusan pada kampus studi lanjut teman-teman Barzada31",
+  },
+  {
+    title: "Sebaran Pekerjaan",
+    href: "/filter/sebaran-pekerjaan",
+    description: "List Sebaran Pekerjaan teman-teman Barzada31",
+  },
+  {
+    title: "Kawan Barzada",
+    href: "/filter/kawan-barzada",
+    description: "Pencarian detail kawan Barzada31 di seluruh dunia ",
+  },
+  {
+    title: "Komunitas",
+    href: "/filter/komunitas",
+    description:
+      "Selalu terkoneksi dengan teman-teman Barzada31 di seluruh dunia",
   },
 ];
 
