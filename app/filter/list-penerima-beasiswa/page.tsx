@@ -23,7 +23,7 @@ async function getTasks() {
   return z.array(taskSchema).parse(tasks);
 }
 
-export default async function PeraihBeasiswaPage() {
+export default async function ListPenerimaBeasiswaPage() {
   const tasks = await getTasks();
 
   return (
