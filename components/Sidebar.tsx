@@ -74,7 +74,7 @@ export function Sidebar() {
         </div>
         <div className="mt-4 flex flex-col gap-y-4">
           {links.map((link) => (
-            <SheetClose asChild>
+            <SheetClose asChild key={link.title}>
               <Link href={link.href}>{link.title}</Link>
             </SheetClose>
           ))}
