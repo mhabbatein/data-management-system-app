@@ -39,7 +39,7 @@ const links: { title: string; href: string }[] = [
     href: "/filter/sebaran-pekerjaan",
   },
   {
-    title: "Kawan Barzada",
+    title: "KawanBarzada",
     href: "/filter/kawan-barzada",
   },
   {

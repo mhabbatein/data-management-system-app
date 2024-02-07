@@ -48,9 +48,9 @@ const components: { title: string; href: string; description: string }[] = [
     description: "List Sebaran Pekerjaan teman-teman Barzada31",
   },
   {
-    title: "Kawan Barzada",
+    title: "KawanBarzada",
     href: "/filter/kawan-barzada",
-    description: "Pencarian detail kawan Barzada31 di seluruh dunia ",
+    description: "Pencarian mendetail teman-teman Barzada31 di seluruh dunia",
   },
   {
     title: "Komunitas",
